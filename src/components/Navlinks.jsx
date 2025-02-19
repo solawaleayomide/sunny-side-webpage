@@ -1,6 +1,6 @@
 function Navlinks() {
   return (
-    <div className="absolute w-full top-[80px] flex flex-col md:flex-row items-center gap-5 bg-white rounded-md py-6">
+    <div className="absolute md:static w-full md:w-auto top-[80px] md:top-0 flex flex-col md:flex-row items-center gap-5 bg-white md:bg-transparent rounded-md py-6">
       <ul className="flex flex-col md:flex-row gap-5 text-primary-cyan text-center md:text-white font-semibold font-barlow ">
         <a
           href="/"

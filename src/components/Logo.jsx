@@ -1,4 +1,14 @@
-export function Logo() {
+// eslint-disable-next-line react/prop-types
+export default function LogoLink({ toggle, setToggle }) {
+  return (
+    <div className="flex flex-row items-center justify-between">
+      <Logo />
+      <Hamburger toggle={toggle} setToggle={setToggle} />
+    </div>
+  );
+}
+
+function Logo() {
   return (
     <div>
       <img src="/assets/logo.svg" alt="logo" />
@@ -7,7 +17,7 @@ export function Logo() {
 }
 
 // eslint-disable-next-line react/prop-types
-export function Hamburger({ toggle, setToggle }) {
+function Hamburger({ toggle, setToggle }) {
   return (
     <div className="md:hidden" onClick={() => setToggle(!toggle)}>
       <img src="/assets/icon-hamburger.svg" alt="hamburger" />
